@@ -1,0 +1,20 @@
+<html>
+    <head>        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
+        <script>
+            function a() {
+                let path = 'http://localhost:4000/hey';
+                axios.post(path, {pw:'1234'})
+                    .then(res => {
+                        console.log(res);
+                    })
+                    .catch(err => {
+                        console.log(err);
+                    })
+            }
+        </script>
+    </head>
+    <body>
+        <button onclick="a()">a</button><br>
+    </body>
+</html>
